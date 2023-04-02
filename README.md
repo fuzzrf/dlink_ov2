@@ -2,7 +2,7 @@ D-Link Dir-2150 stack overflow #2
 
 Built-in web service 'anweb' contains stack overflow in action_handler() function.
 
-When anweb receives a websocket request in the form sysutils:<string>, it copies <string> to a 260 byte stack buffer.
+When anweb receives a websocket request in the form sysutils:[STRING], it copies <string> to a 260 byte stack buffer.
 
 ```
 
